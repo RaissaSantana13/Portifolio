@@ -27,7 +27,7 @@
             <div class="home-text">
                 <p>Olá, eu sou</p>
                 <h1 id="typing-text"></h1>
-                <p class="description">Desenvolvedora apaixonada por criar soluções web elegantes e funcionais.</p>
+                <p class="description">Desenvolvimento de Software | C# | Java | Flutter | HTML | CSS | SQL <br>Estudante de Engenharia da Computação.</p>
                 <div class="btns">
                     <a href="#" class="btn-full">Baixar CV</a>
                     <a href="#projetos" class="btn-outline">Ver Projetos</a>
@@ -38,6 +38,10 @@
             </div>
         </section>
 
+        <section id="sobre" class="container">
+            <h2 class="section-title">Sobre <span>Mim</span></h2>
+            <p class="description">Descrição sobre mim</p>
+        </section>
         <section id="habilidades" class="container">
             <h2 class="section-title">Minhas <span>Habilidades</span></h2>
             <div class="skills-grid">
@@ -95,19 +99,81 @@
             </div>
         </section>
 
-        <section id="projetos" class="container">
-            <h2 class="section-title">Meus <span>Projetos</span></h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="assets/projeto1.jpg" alt="Projeto">
-                    <div class="project-info">
-                        <h3>Nome do Projeto</h3>
-                        <p>Descrição curta do projeto utilizando tecnologias modernas.</p>
-                        <a href="#" class="view-link">Ver Repositório</a>
-                    </div>
+    <section id="projetos" class="container">
+        <h2 class="section-title">Meus <span>Projetos</span></h2>
+        <div class="projects-container">
+            <div class="project-card" data-index="0">
+                <img src="assets/alterego.png" alt="Projeto 1">
+                <div class="project-info">
+                    <h3>Nome do Projeto</h3>
+                    <p>Clique para ver detalhes</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <div id="modal-projeto" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-top">
+                <div class="video-container">
+                    <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Título do Projeto</h2>
+                    <p id="modal-description">Descrição completa do projeto.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" id="modal-repo" target="_blank" class="btn-full">Ver Repositório</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="contatos" class="container">
+        <h2 class="section-title">Meus <span>Contatos</span></h2>
+        <div class="icons-contatos">
+            <div class="icon-box">
+                <a href="mailto:raissasanta8@gmail.com" target="_blank">
+                    <div class="circle">
+                        <img src="assets/email.svg" alt="Email">
+                    </div>
+                    <p>E-mail</p>
+                    <span>raissasanta8@gmail.com</span>
+                </a>
+            </div>
+
+            <div class="icon-box">
+                <a href="https://www.linkedin.com/in/raissa-santana-785736353/" target="_blank">
+                    <div class="circle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="Linkedin">
+                    </div>
+                    <p>Linkedin</p>
+                    <span>@raissasantana</span>
+                </a>
+            </div>
+
+            <div class="icon-box">
+                <a href="https://github.com/RaissaSantana13" target="_blank">
+                    <div class="circle">
+                        <img src="assets/github.svg" alt="GitHub">
+                    </div>
+                    <p>GitHub</p>
+                    <span>@raissasantana</span>
+                </a>
+            </div>
+
+            <div class="icon-box">
+                <a href="https://wa.me/551799040245" target="_blank">
+                    <div class="circle">
+                        <img src="assets/telephone.svg" alt="Telefone">
+                    </div>
+                    <p>Telefone</p>
+                    <span>(17) 99604-0245</span>
+                </a>
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer>
