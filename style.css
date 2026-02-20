@@ -71,8 +71,63 @@ nav ul li a:hover { color: var(--rosa-principal); }
     height: 300px;
     border-radius: 50%; 
     object-fit: cover;  
-    border: 4px solid var(--rosa-principal); 
-    margin-right: -50px; 
+    border: 4px solid var(--rosa-principal);  
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    background: var(--fundo-card);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 77, 148, 0.1);
+}
+
+.sobre-text p {
+    color: var(--texto-secundario);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.sobre-text strong {
+    color: var(--rosa-principal);
+    font-weight: 600;
+}
+
+.sobre-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.info-card {
+    background: var(--fundo-dark);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid var(--rosa-principal);
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+    background: rgba(255, 77, 148, 0.05);
+}
+
+.info-card h4 {
+    color: var(--rosa-principal);
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-card p {
+    color: var(--texto-cor);
+    font-size: 0.95rem;
+    margin: 0;
 }
 
 .btns{
@@ -225,7 +280,7 @@ nav ul li a:hover { color: var(--rosa-principal); }
 .modal-content {
     background: var(--fundo-card);
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     padding: 30px;
     border-radius: 15px;
     position: relative;
@@ -356,5 +411,17 @@ footer{
     .project-card {
         width: 100%;
         max-width: 384px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sobre-content {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    .sobre-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
